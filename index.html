@@ -25,22 +25,28 @@
             font-size: 3rem;
             font-weight: bold;
             margin: 0;
-            transition: transform 0.3s ease, color 0.3s ease;
+            transform: translateY(50px); /* Start below */
+            opacity: 0;
+            transition: transform 0.5s ease, opacity 0.5s ease;
         }
 
         h1:hover {
-            transform: scale(1.1);
+            transform: translateY(0); /* Move to its original position */
+            opacity: 1;
             color: #ffb6c1; /* Light coral */
         }
 
         p {
             font-size: 1.5rem;
             margin: 0.5rem 0;
-            transition: transform 0.3s ease, color 0.3s ease;
+            transform: translateY(50px); /* Start below */
+            opacity: 0;
+            transition: transform 0.5s ease, opacity 0.5s ease;
         }
 
         p:hover {
-            transform: scale(1.1); /* Increased scale for more noticeable effect */
+            transform: translateY(0); /* Move to its original position */
+            opacity: 1;
             color: #ffe4e1; /* Misty Rose */
         }
 
@@ -62,6 +68,22 @@
             color: #ffffff;
             transform: scale(1.1);
             cursor: pointer;
+        }
+
+        /* Animation for initial page load */
+        .container {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>

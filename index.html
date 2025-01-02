@@ -3,90 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Het Shah</title>
+    <title>Resume</title>
     <style>
-        /* General Reset */
-        body {
+        body, html {
             margin: 0;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-
-        /* Gradient Background Animation */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
+            padding: 0;
             height: 100%;
-            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #84fab0);
-            background-size: 300% 300%;
-            animation: gradientBG 15s ease infinite;
-            z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #ffd1dc, #ffc0cb); /* Light pink gradient */
+            font-family: Arial, sans-serif;
+            color: #ffffff;
         }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Centered Content */
         .container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             text-align: center;
-            color: white;
-            animation: fadeSlideDown 2s ease;
-        }
-
-        @keyframes fadeSlideDown {
-            0% { opacity: 0; transform: translateY(-30px); }
-            100% { opacity: 1; transform: translateY(0); }
         }
 
         h1 {
             font-size: 3rem;
-            margin: 0 0 10px;
+            font-weight: bold;
+            margin: 0;
         }
 
         p {
-            font-size: 1.2rem;
-            margin: 0 0 20px;
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
         }
 
         .btn {
             display: inline-block;
-            padding: 15px 30px;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
             font-size: 1rem;
-            color: #fff;
-            background-color: rgba(255, 255, 255, 0.2);
-            border: 2px solid white;
-            border-radius: 30px;
+            color: #ffc0cb;
+            background-color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 50px;
             text-decoration: none;
-            transition: transform 0.3s ease, background-color 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .btn:hover {
-            background-color: rgba(255, 255, 255, 0.4);
-            transform: scale(1.1);
-        }
-
-        /* Media Query for Responsiveness */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-            p {
-                font-size: 1rem;
-            }
-            .btn {
-                padding: 10px 20px;
-                font-size: 0.9rem;
-            }
+            background-color: #ffc0cb;
+            color: #ffffff;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -94,7 +56,7 @@
     <div class="container">
         <h1>Het Bhavesh Shah</h1>
         <p>Web Developer | Data Enthusiast | Problem Solver</p>
-        <a href="ShahHet.pdf" class="btn" download>Download My Resume</a>
+        <a href="resume.pdf" download class="btn">Download My Resume</a>
     </div>
 </body>
 </html>

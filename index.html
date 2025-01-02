@@ -27,7 +27,7 @@
             margin: 0;
             transform: translateY(50px); /* Start below */
             opacity: 0;
-            transition: transform 0.5s ease, opacity 0.5s ease;
+            animation: fadeInUp 1s ease-out forwards;
         }
 
         p {
@@ -35,8 +35,9 @@
             margin: 0.5rem 0;
             transform: translateY(50px); /* Start below */
             opacity: 0;
-            transition: transform 0.5s ease, opacity 0.5s ease;
+            animation: fadeInUp 1.2s ease-out forwards;
         }
+
         .btn {
             display: inline-block;
             margin-top: 1rem;
@@ -57,11 +58,7 @@
             cursor: pointer;
         }
 
-        /* Animation for initial page load */
-        .container {
-            animation: fadeInUp 1s ease-out forwards;
-        }
-
+        /* Keyframe animation for from bottom to top */
         @keyframes fadeInUp {
             from {
                 opacity: 0;

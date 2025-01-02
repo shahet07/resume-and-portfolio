@@ -10,21 +10,24 @@
             margin: 0;
             font-family: 'Arial', sans-serif;
             color: #fff;
-            background: linear-gradient(120deg, #007bff, #6f42c1);
             text-align: center;
-            overflow-x: hidden;
+            overflow: hidden;
+            background: linear-gradient(-45deg, #ff6f61, #6f42c1, #007bff, #ffca3a);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
         }
 
         h1 {
             font-size: 3rem;
-            margin: 50px 0 10px;
-            animation: slideDown 1.2s ease-out;
+            margin: 100px 0 10px;
+            animation: fadeSlideDown 2s ease-out;
+            letter-spacing: 3px;
         }
 
         p {
             font-size: 1.2rem;
-            margin: 10px 0 30px;
-            animation: fadeIn 2s ease-out;
+            margin: 20px 0 30px;
+            animation: fadeSlideUp 2s ease-out;
         }
 
         .btn {
@@ -35,23 +38,23 @@
             text-decoration: none;
             border: 2px solid #fff;
             border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            animation: slideUp 1.5s ease-out;
+            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+            animation: zoomIn 1.5s ease-out;
         }
 
         .btn:hover {
             background-color: #fff;
             color: #6f42c1;
+            transform: scale(1.1);
         }
 
         .wave {
-            position: relative;
+            position: absolute;
+            bottom: 0;
             width: 100%;
             height: 150px;
             background: url('https://i.imgur.com/OxAwoq1.png') repeat-x;
             background-size: cover;
-
-
             animation: wave 10s infinite linear;
         }
 
@@ -78,7 +81,19 @@
         }
 
         /* Animations */
-        @keyframes slideDown {
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes fadeSlideDown {
             from {
                 opacity: 0;
                 transform: translateY(-50px);
@@ -89,16 +104,7 @@
             }
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes slideUp {
+        @keyframes fadeSlideUp {
             from {
                 opacity: 0;
                 transform: translateY(50px);
@@ -106,6 +112,17 @@
             to {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
             }
         }
 
@@ -121,8 +138,8 @@
 </head>
 <body>
     <h1>Welcome to My Resume</h1>
-    <p>Your one-stop destination to know more about me.</p>
-    <a href="ShahHet.pdf" target="_blank" class="btn">Download My CV</a>
+    <p>A place to explore my professional journey.</p>
+    <a href="cv.pdf" target="_blank" class="btn">Download My CV</a>
     <div class="wave"></div>
 </body>
 </html>

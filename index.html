@@ -3,154 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Het Bhavesh Shah - Portfolio</title>
+    <title>Resume & Portfolio</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        body, html {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            animation: fadeIn 1.5s ease-in-out;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to bottom, #ffd1dc, #085759);
+            background-image: url('krishna-pandey-KNZHyTpre18-unsplash.jpg'); 
+            font-family: Arial, sans-serif;
+            color: #ffffff;
         }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            animation: scaleUp 2s ease-in-out;
-        }
-        @keyframes scaleUp {
-            from {
-                transform: scale(0.5);
-            }
-            to {
-                transform: scale(1);
-            }
-        }
+
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            animation: slideIn 1.5s ease-out;
-        }
-        @keyframes slideIn {
-            from {
-                transform: translateY(30px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        .links a {
-            text-decoration: none;
-            color: #4CAF50;
-            margin-right: 10px;
-            font-weight: bold;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            color: #4CAF50;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-        .section img {
-            width: 100%;
-            border-radius: 8px;
-            margin-top: 10px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .btn-container {
             text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+            color: #ffffff;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #333333;
+            border: 2px solid #ffffff;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .btn:hover {
+            background-color: #555555;
+            color: #ffffff;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .portfolio {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
             margin-top: 20px;
         }
-        .btn-container a {
+
+        .portfolio-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .portfolio-item h3 {
+            margin: 15px 0 10px;
+            font-size: 1.2rem;
+        }
+
+        .portfolio-item p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .portfolio-item a {
             display: inline-block;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 5px;
-            color: white;
-            background: #4CAF50;
-            border-radius: 4px;
-            font-weight: bold;
-            animation: bounce 2s infinite;
+            margin-top: 10px;
+            color: #ffffff;
+            text-decoration: underline;
         }
-        .btn-container a:hover {
-            background: #45a049;
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
+
+        .portfolio-item a:hover {
+            color: #ffd1dc;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="https://via.placeholder.com/120" alt="Profile Picture">
-        <h1>Het Bhavesh Shah</h1>
-        <p>San Jose, CA | shahet07@gmail.com | 341 345-7372</p>
-        <p class="links">
-            <a href="http://www.linkedin.com/in/shahet07" target="_blank">LinkedIn</a>
-            <a href="https://github.com/shahet07" target="_blank">GitHub</a>
-        </p>
-    </header>
     <div class="container">
-        <div class="section">
-            <h2>Summary</h2>
-            <p>Detail-oriented Junior Web Developer transitioning into Data Engineering and Machine Learning Operations. Skilled at building and optimizing data pipelines, automating workflows, and deploying scalable solutions.</p>
-        </div>
-        <div class="section">
-            <h2>Education</h2>
-            <img src="https://via.placeholder.com/600x200" alt="Education Image">
-            <p><strong>Master of Science in Information Systems</strong> <em>(Expected June 2026)</em><br>Santa Clara University, Santa Clara, California</p>
-            <ul>
-                <li>Research Assistant under Manoochehr Ghiassi – Sentimental Analysis</li>
-                <li>Relevant Coursework: NLP, machine learning, deep learning, and more.</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Professional Experience</h2>
-            <img src="https://via.placeholder.com/600x200" alt="Professional Experience Image">
-            <p><strong>Junior Web Developer</strong> | Pegasus Design House | June 2023 – July 2024</p>
-            <ul>
-                <li>Developed and optimized MySQL databases, improving data retrieval.</li>
-                <li>Designed and implemented test cases, resolving crash issues.</li>
-            </ul>
-        </div>
-        <div class="btn-container">
-            <a href="mailto:shahet07@gmail.com">Contact Me</a>
-            <a href="https://github.com/shahet07" target="_blank">View My GitHub</a>
+        <h1>Het Bhavesh Shah</h1>
+        <p>Web Developer | Data Enthusiast | Problem Solver | ML Enthusiast | Software Developer</p>
+        <a href="Het_Bhavesh_Shah.pdf" download class="btn">Download My Resume</a>
+    </div>
+
+    <div class="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/250" alt="Project 1">
+                <h3>Image Classifier</h3>
+                <p>An AI model categorizing images into predefined classes with Streamlit interface.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/250" alt="Project 2">
+                <h3>ETL Pipeline Automation</h3>
+                <p>Automated ETL pipeline for large datasets, reducing processing times by 30%.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/250" alt="Project 3">
+                <h3>CA Low Income Counties Analysis</h3>
+                <p>Analyzed pollution and demographics relationships in California counties.</p>
+                <a href="#">View Project</a>
+            </div>
         </div>
     </div>
 </body>

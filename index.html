@@ -3,66 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Het Bhavesh Shah - Portfolio</title>
     <style>
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(to bottom, #ffd1dc, #085759);
-            background-image: url('krishna-pandey-KNZHyTpre18-unsplash.jpg'); 
-            font-family: Arial, sans-serif;
-            color: #ffffff;
+            background-color: #f4f4f9;
+            color: #333;
         }
-
-        .container {
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: bold;
+        header h1 {
             margin: 0;
-            color: #ffffff;
         }
-
-        p {
-            font-size: 1.5rem;
-            margin: 0.5rem 0;
-            color: #ffffff;
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-       .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    color: #ffffff; /* White text color for contrast */
-    background-color: #333333; /* Dark background color */
-    border: 2px solid #ffffff; /* White border for contrast */
-    border-radius: 50px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    background-size: cover;
-    background-position: center;
-}
-
-.btn:hover {
-    background-color: #555555; /* Lighter dark color on hover */
-    color: #ffffff; /* Maintain white text color */
-    transform: scale(1.1);
-    cursor: pointer;
-}
+        .links a {
+            text-decoration: none;
+            color: #4CAF50;
+            margin-right: 10px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Het Bhavesh Shah</h1>
-        <p>Web Developer | Data Enthusiast | Problem Solver | ML Enthusiast | Software Developer | Data Enthusiast</p>
-        <a href="Het_Bhavesh_Shah.pdf" download class="btn">Download My Resume</a>
+        <p>San Jose, CA | shahet07@gmail.com | 341 345-7372</p>
+        <p class="links">
+            <a href="http://www.linkedin.com/in/shahet07" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/shahet07" target="_blank">GitHub</a>
+        </p>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Summary</h2>
+            <p>Detail-oriented Junior Web Developer transitioning into Data Engineering and Machine Learning Operations. Skilled at building and optimizing data pipelines, automating workflows, and deploying scalable solutions.</p>
+        </div>
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Master of Science in Information Systems</strong> <em>(Expected June 2026)</em><br>Santa Clara University, Santa Clara, California</p>
+            <ul>
+                <li>Research Assistant under Manoochehr Ghiassi – Sentimental Analysis</li>
+                <li>Relevant Coursework: Natural language processing, machine learning, deep learning, and more.</li>
+            </ul>
+            <p><strong>Bachelor of Engineering in Information Technology</strong> <em>(2019-2023)</em><br>Gujarat Technological University, Gujarat, India</p>
+        </div>
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <p><strong>Junior Web Developer</strong> | Pegasus Design House | June 2023 – July 2024</p>
+            <ul>
+                <li>Developed and optimized MySQL databases, improving data retrieval during high-traffic periods.</li>
+                <li>Designed and implemented test cases, resolving major application crash issues.</li>
+            </ul>
+            <p><strong>Web Developer Intern</strong> | iGlobal Software | Feb 2023 – April 2023</p>
+            <ul>
+                <li>Built over 20 web features using PHP, HTML, CSS, and JavaScript, enhancing user experiences.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <p>Programming Languages: Python, SQL, Java, R, C++, HTML/CSS, JavaScript</p>
+            <p>Tools & Platforms: Apache Airflow, MLflow, TensorFlow, Docker, Git, Tableau, Power BI</p>
+            <p>Databases: MySQL</p>
+        </div>
     </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume & Portfolio</title>
+    <title>Het Bhavesh Shah - Resume & Portfolio</title>
     <style>
         body, html {
             margin: 0;
@@ -16,6 +16,12 @@
             background-image: url('krishna-pandey-KNZHyTpre18-unsplash.jpg'); 
             font-family: Arial, sans-serif;
             color: #ffffff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         .container {
@@ -28,6 +34,12 @@
             font-weight: bold;
             margin: 0;
             color: #ffffff;
+            animation: slideInDown 1.5s ease-out;
+        }
+
+        @keyframes slideInDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
 
         p {
@@ -47,8 +59,13 @@
             border-radius: 50px;
             text-decoration: none;
             transition: all 0.3s ease;
-            background-size: cover;
-            background-position: center;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
         }
 
         .btn:hover {
@@ -68,10 +85,13 @@
             font-size: 2rem;
             margin-bottom: 1rem;
             text-align: center;
+            color: #ffebcc;
         }
 
-        .section p {
+        .section p, .section ul {
             font-size: 1.2rem;
+            text-align: left;
+            line-height: 1.6;
         }
 
         .portfolio-grid {
@@ -88,6 +108,12 @@
             border-radius: 10px;
             text-align: center;
             transition: transform 0.3s ease, background-color 0.3s ease;
+            animation: slideInUp 1.5s ease-out;
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
 
         .portfolio-item:hover {
@@ -95,46 +121,44 @@
             background-color: rgba(255, 255, 255, 0.2);
         }
 
-        .portfolio-item img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
         .portfolio-item h3 {
             margin: 15px 0 10px;
             font-size: 1.2rem;
-        }
-
-        .portfolio-item p {
-            font-size: 1rem;
-            margin: 0;
+            color: #ffebcc;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Het Bhavesh Shah</h1>
-        <p>Web Developer | Data Enthusiast | Problem Solver | ML Enthusiast | Software Developer</p>
-        <a href="Het_Bhavesh_Shah.pdf" download class="btn">Download My Resume</a>
+        <p>Web Developer | Data Engineer | Machine Learning Enthusiast | Software Developer</p>
+        <a href="HetShah.pdf" download class="btn">Download My Resume</a>
     </div>
 
     <div class="section">
         <h2>Education</h2>
         <p><strong>Master of Science in Information Systems</strong> - Santa Clara University (Expected: June 2026)</p>
+        <ul>
+            <li>Research Assistant under Manoochehr Ghiassi - Sentiment Analysis</li>
+            <li>Relevant Coursework: NLP, Machine Learning Ops, Deep Learning, Distributed Systems</li>
+        </ul>
         <p><strong>Bachelor of Engineering in Information Technology</strong> - Gujarat Technological University (2019-2023)</p>
+        <ul>
+            <li>Relevant Coursework: Data Structures, Machine Learning, Big Data Analytics</li>
+        </ul>
     </div>
 
     <div class="section">
         <h2>Work Experience</h2>
         <p><strong>Junior Web Developer</strong> - Pegasus Design House (June 2023 – July 2024)</p>
         <ul>
-            <li>Developed and optimized MySQL databases, enhancing data retrieval performance.</li>
-            <li>Designed test cases and resolved major application crash issues.</li>
+            <li>Managed complex MySQL databases, improving query performance by 25%.</li>
+            <li>Designed test cases, identifying and resolving key application crashes.</li>
         </ul>
         <p><strong>Web Developer Intern</strong> - iGlobal Software (Feb 2023 – April 2023)</p>
         <ul>
-            <li>Created over 20 web features using PHP, HTML, CSS, and JavaScript.</li>
-            <li>Streamlined feature deployment by automating repetitive tasks.</li>
+            <li>Developed 20+ web features using PHP, HTML, CSS, and JavaScript.</li>
+            <li>Optimized site functionality to enhance user experience.</li>
         </ul>
     </div>
 
@@ -143,15 +167,15 @@
         <div class="portfolio-grid">
             <div class="portfolio-item">
                 <h3>Image Classifier</h3>
-                <p>Developed an AI model categorizing images into predefined classes using Streamlit.</p>
+                <p>Built an AI model for image categorization using Python and Streamlit.</p>
             </div>
             <div class="portfolio-item">
                 <h3>ETL Pipeline Automation</h3>
-                <p>Automated ETL pipeline for large datasets, reducing processing times by 30%.</p>
+                <p>Designed an automated pipeline reducing data processing time by 30%.</p>
             </div>
             <div class="portfolio-item">
                 <h3>CA Low Income Counties Analysis</h3>
-                <p>Analyzed pollution and demographics relationships in California counties.</p>
+                <p>Investigated relationships between pollution and demographics in California.</p>
             </div>
         </div>
     </div>

@@ -13,7 +13,6 @@
             flex-direction: column;
             align-items: center;
             background: linear-gradient(to bottom, #ffd1dc, #085759);
-            background-image: url('krishna-pandey-KNZHyTpre18-unsplash.jpg');
             font-family: Arial, sans-serif;
             color: #ffffff;
             animation: fadeIn 2s ease-in-out;
@@ -27,82 +26,98 @@
         .container {
             text-align: center;
             margin: 20px;
-            max-width: 90%;
-            word-wrap: break-word;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: bold;
             margin: 0;
             color: #ffffff;
             animation: slideInDown 1.5s ease-out;
         }
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-            p {
-                font-size: 1.2rem;
-            }
-            .btn {
-                font-size: 0.9rem;
-                padding: 0.6rem 1.2rem;
-            }
+        p {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+            color: #ffffff;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #333333;
+            border: 2px solid #ffffff;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555555;
+            transform: scale(1.1);
+            cursor: pointer;
         }
 
         .section {
-            width: 90%;
-            max-width: 800px;
+            width: 80%;
             margin: 20px auto;
             text-align: left;
         }
 
+        .section h2 {
+            font-size: 2rem;
+            text-align: center;
+            color: #ffebcc;
+        }
+
         .portfolio-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-top: 20px;
+        }
+
+        .portfolio-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Het Bhavesh Shah</h1>
-        <p>Web Developer | Data Engineer | Machine Learning Enthusiast | Software Developer</p>
+        <p>Enterprise Data Analyst | Web Developer | Machine Learning Enthusiast | Software Developer</p>
         <a href="Het_Bhavesh_Shah_Resume.pdf" download class="btn">Download My Resume</a>
     </div>
 
     <div class="section">
         <h2>Education</h2>
         <p><strong>Master of Science in Information Systems</strong> - Santa Clara University (Expected: June 2026)</p>
-        <ul>
-            <li>Relevant Coursework: NLP, ML, Deep Learning, DBMS, OOP, Distributed Systems, Data Analysis, Financial Accounting, Supply Chain Management, SPM.</li>
-        </ul>
-        <p><strong>Bachelor of Engineering in Information Technology</strong> - Gujarat Technological University (2019-2023)</p>
-        <ul>
-            <li>Relevant Coursework: DSA, Software Engineering, Design and Analysis of Algorithms, OOPS, DBMS, ML, BDA, OS, CA.</li>
-        </ul>
+        <p><strong>Bachelor of Engineering in IT</strong> - Gujarat Technological University (2019-2023)</p>
     </div>
 
     <div class="section">
         <h2>Work Experience</h2>
-        <p><strong>Enterprise Data Analyst</strong> - Grammarly (Jan 2024 – Present)</p>
+        <p><strong>Enterprise Data Analyst</strong> - San Francisco, CA (Jan 2024 - Present)</p>
         <ul>
-            <li>Conducting SQL and Python-based data analysis to segment enterprise institutions using the MECE framework.</li>
-            <li>Providing insights to optimize Grammarly’s B2B offerings and drive sustainable growth.</li>
+            <li>Conducting SQL and Python-based data analysis to segment enterprise institutions.</li>
+            <li>Optimizing Grammarly’s B2B offerings through MECE framework analysis.</li>
         </ul>
-        <p><strong>Junior Web Developer</strong> - Pegasus Design House (June 2023 – July 2024)</p>
+        <p><strong>Junior Web Developer</strong> - Pegasus Design House (June 2023 - July 2024)</p>
         <ul>
-            <li>Developed and maintained web functionalities using HTML, CSS, PHP, JavaScript, WordPress, and MySQL.</li>
-            <li>Collaborated with QA teams by writing and executing test cases, identifying and resolving bugs.</li>
-        </ul>
-        <p><strong>Web Developer Intern</strong> - iGlobal Software (Feb 2023 – April 2023)</p>
-        <ul>
-            <li>Developed 20+ web features using PHP, HTML, CSS, and JavaScript.</li>
-            <li>Optimized site functionality to enhance user experience.</li>
+            <li>Developed and maintained web functionalities using PHP, HTML, JavaScript.</li>
         </ul>
     </div>
 
@@ -110,16 +125,12 @@
         <h2>Projects</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <h3>Sentiment Analysis</h3>
-                <p>Implemented LSTM-based sentiment analysis for EVs with TensorFlow.</p>
-            </div>
-            <div class="portfolio-item">
-                <h3>Image Classifier</h3>
-                <p>Built a CNN model with 69.57% accuracy using Python and Streamlit.</p>
+                <h3>Sentiment Analysis - Franklin Templeton</h3>
+                <p>Developed an LSTM-based model for sentiment analysis on electric vehicles.</p>
             </div>
             <div class="portfolio-item">
                 <h3>ETL Pipeline Automation</h3>
-                <p>Automated an ETL pipeline reducing processing time by 30%.</p>
+                <p>Automated ETL workflows, reducing processing time by 30%.</p>
             </div>
         </div>
     </div>

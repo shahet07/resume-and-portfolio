@@ -13,15 +13,8 @@
             flex-direction: column;
             align-items: center;
             background: linear-gradient(to bottom, #ffd1dc, #085759);
-            background-image: url('krishna-pandey-KNZHyTpre18-unsplash.jpg');
             font-family: Arial, sans-serif;
             color: #ffffff;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
         }
 
         .container {
@@ -32,15 +25,6 @@
         h1 {
             font-size: 3rem;
             font-weight: bold;
-            margin: 0;
-            color: #ffffff;
-            animation: slideInDown 1.5s ease-out;
-        }
-
-        p {
-            font-size: 1.5rem;
-            margin: 0.5rem 0;
-            color: #ffffff;
         }
 
         .btn {
@@ -53,13 +37,6 @@
             border: 2px solid #ffffff;
             border-radius: 50px;
             text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #555555;
-            transform: scale(1.1);
-            cursor: pointer;
         }
 
         .section {
@@ -73,85 +50,54 @@
             text-align: center;
             color: #ffebcc;
         }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .portfolio-item {
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid #ffffff;
-            padding: 15px;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .portfolio-item:hover {
-            transform: scale(1.05);
-            background-color: rgba(255, 255, 255, 0.2);
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Het Bhavesh Shah</h1>
-        <p>Enterprise Data Analyst | Web Developer | Machine Learning Enthusiast | Software Developer</p>
+        <p>Enterprise Data Analyst | Web Developer | ML Enthusiast</p>
         <a href="Het-Bhavesh-Shah.pdf" download class="btn">Download My Resume</a>
     </div>
 
     <div class="section">
         <h2>Education</h2>
         <p><strong>Master of Science in Information Systems</strong> - Santa Clara University (Expected: June 2026)</p>
+        <p>Relevant Coursework: NLP, ML, Deep Learning, DBMS, OOP, Distributed Systems, Data Analysis.</p>
         <p><strong>Bachelor of Engineering in IT</strong> - Gujarat Technological University (2019-2023)</p>
+        <p>Relevant Coursework: DSA, Software Engineering, Algorithms, OOPS, DBMS, ML, OS.</p>
     </div>
 
     <div class="section">
         <h2>Work Experience</h2>
         <p><strong>Enterprise Data Analyst</strong> - Grammarly (Jan 2024 - Present)</p>
         <ul>
-            <li>Conducting SQL and Python-based data analysis to segment enterprise institutions.</li>
-            <li>Optimizing Grammarly’s B2B offerings through MECE framework analysis.</li>
+            <li>Conducting SQL and Python-based data analysis using the MECE framework.</li>
+            <li>Identifying growth opportunities and optimizing Grammarly’s B2B offerings.</li>
         </ul>
         <p><strong>Junior Web Developer</strong> - Pegasus Design House (June 2023 - July 2024)</p>
         <ul>
-            <li>Developed and maintained web functionalities using PHP, HTML, JavaScript.</li>
-        </ul>
-        <p><strong>Web Developer Intern</strong> - iGlobal Software (Feb 2023 - April 2023)</p>
-        <ul>
-            <li>Developed and refined 20+ web features using PHP, HTML, CSS, and JavaScript.</li>
+            <li>Developed web functionalities using PHP, HTML, CSS, JavaScript, MySQL.</li>
+            <li>Managed databases and collaborated with QA teams for application stability.</li>
         </ul>
     </div>
 
     <div class="section">
         <h2>Projects</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <h3>Sentiment Analysis - Franklin Templeton</h3>
-                <p>Developed an LSTM-based model for sentiment analysis on electric vehicles.</p>
-            </div>
-            <div class="portfolio-item">
-                <h3>ETL Pipeline Automation</h3>
-                <p>Automated ETL workflows, reducing processing time by 30%.</p>
-            </div>
-            <div class="portfolio-item">
-                <h3>CA Low Income Counties Analysis</h3>
-                <p>Investigated relationships between pollution and demographics in California.</p>
-            </div>
-        </div>
+        <ul>
+            <li><strong>Sentiment Analysis - Franklin Templeton:</strong> LSTM-based model analyzing electric vehicle sentiment.</li>
+            <li><strong>ETL Pipeline Automation:</strong> Automated workflows, reducing processing time by 30%.</li>
+            <li><strong>Image Classifier:</strong> Built a CNN model achieving 69.57% accuracy.</li>
+        </ul>
     </div>
 
     <div class="section">
         <h2>Certifications</h2>
         <ul>
-            <li>Python for Data Science, AI and Development (IBM)</li>
-            <li>Getting Started with AWS Machine Learning (Amazon)</li>
-            <li>Programming Foundations with JS, HTML, and CSS (Duke University)</li>
-            <li>Foundations: Data, Data Everywhere (Google)</li>
+            <li>Python for Data Science, AI and Development - IBM</li>
+            <li>Getting Started with AWS ML - Amazon</li>
+            <li>Foundations: Data, Data Everywhere - Google</li>
         </ul>
     </div>
 </body>
 </html>
+
